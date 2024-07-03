@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Demo V1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        main {
+            padding: 2rem;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to NewRelic 1</h1>
+    </header>
+    <main>
+        <p>This is a demo page for New Relic.</p>
+        <button onclick="displayMessage()">Click Me!</button>
+        <p id="message" style="margin-top: 1rem;"></p>
+    </main>
+    <script>
+        function displayMessage() {
+            document.getElementById('message').textContent = 'Hello from Nginx!';
+        }
+    </script>
+</body>
+</html>
